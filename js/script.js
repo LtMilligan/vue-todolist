@@ -3,6 +3,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            new_task: null,
             coseDaFare: [
                 {
                     text: 'Tagliare il prato',
@@ -30,6 +31,14 @@ createApp({
                 }
 
             ]
+        }
+    },
+    methods: {
+        deleteTask(index) {
+            this.coseDaFare.splice(index, 1)
+        },
+        changeText(index) {
+           
         }
     }
 }).mount('#app')
