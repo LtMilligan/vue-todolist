@@ -37,9 +37,6 @@ createApp({
         deleteTask(index) {
             this.coseDaFare.splice(index, 1)
         },
-        changeText(index) {
-           
-        },
         addTask() {
             const nuovoOggetto = {
                 text: this.new_task,
