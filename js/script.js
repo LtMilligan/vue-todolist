@@ -39,6 +39,14 @@ createApp({
         },
         changeText(index) {
            
+        },
+        addTask() {
+            const nuovoOggetto = {
+                text: this.new_task,
+                done: false
+            }
+            this.coseDaFare.push(nuovoOggetto)
+            this.new_task = null
         }
     }
 }).mount('#app')
